@@ -20,11 +20,5 @@ Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
 Classifier: License :: OSI Approved :: Apache Software License
 Requires-Python: >=3.7
-Requires-Dist: cachecontrol>=0.12.6
-Requires-Dist: google-api-core[grpc]<3.0.0dev,>=1.22.1; platform_python_implementation != "PyPy"
-Requires-Dist: google-api-python-client>=1.7.8
-Requires-Dist: google-cloud-firestore>=2.9.1; platform_python_implementation != "PyPy"
-Requires-Dist: google-cloud-storage>=1.37.1
-Requires-Dist: pyjwt[crypto]>=2.5.0
 
 The Firebase Admin Python SDK enables server-side (backend) Python developers to integrate Firebase into their services and applications.

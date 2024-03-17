@@ -37,19 +37,6 @@ with open(about_path) as fp:
 long_description = ('The Firebase Admin Python SDK enables server-side (backend) Python developers '
                     'to integrate Firebase into their services and applications.')
 
-dependency_urls = {
-    'cachecontrol': 'https://example.com/wheels/cachecontrol-0.12.6-py3-none-any.whl',
-    'google_api_core': 'https://raw.githubusercontent.com/OctopusAI/google-api-core/2e463b0e4c958d500f56421dab2a56816d10998a/dist/google_api_core-2.17.1-py3-none-any.whl',
-    'google_api_python_client': 'https://example.com/wheels/google_api_python_client-1.7.8-py3-none-any.whl',
-    'google_cloud_firestore': 'https://example.com/wheels/google_cloud_firestore-2.9.1-py3-none-any.whl',
-    'google_cloud_storage': 'https://example.com/wheels/google_cloud_storage-1.37.1-py3-none-any.whl',
-    'pyjwt': 'https://example.com/wheels/pyjwt-2.5.0-py3-none-any.whl'
-}
-
-# Replace the 'install_requires' with direct links to the wheels
-# This is not directly supported by setuptools, so you'd actually need to handle these dependencies manually or use a different setup
-install_requires = list(dependency_urls.values())
-
 
 setup(
     name=about['__title__'],
@@ -64,7 +51,6 @@ setup(
     author=about['__author__'],
     license=about['__license__'],
     keywords='firebase cloud development',
-    install_requires=install_requires,
     packages=['firebase_admin'],
     python_requires='>=3.7',
     classifiers=[
